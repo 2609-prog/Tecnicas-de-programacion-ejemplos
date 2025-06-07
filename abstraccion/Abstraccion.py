@@ -1,22 +1,15 @@
-class Vehiculo:
-    def arrancar(self):
-        print("El vehículo está arrancando...")
+class Calculadora:
+    def __init__(self, numero1, numero2):
+        self.numero1 = numero1
+        self.numero2 = numero2
 
-class Coche(Vehiculo):
-    def arrancar(self):
-        print("El coche está arrancando con llave...")
+    def sumar(self):
+        return self.numero1 + self.numero2
 
-class Moto(Vehiculo):
-    def arrancar(self):
-        print("La moto arranca con botón...")
+    def restar(self):
+        return self.numero1 - self.numero2
 
-# Función fuera de las clases
-def iniciar_vehiculo(vehiculo):
-    vehiculo.arrancar()
-
-# Probar el polimorfismo
-auto = Coche()
-moto = Moto()
-
-iniciar_vehiculo(auto)
-iniciar_vehiculo(moto)
+# Usamos la clase
+calc = Calculadora(10, 5)
+print("Suma:", calc.sumar())
+print("Resta:", calc.restar())

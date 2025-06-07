@@ -1,2 +1,2 @@
 ﻿# Encapsulacion
-Encapsulé los datos (numero1 y numero2) dentro de la clase Calculadora, protegiendo la información y ofreciendo métodos públicos (sumar, restar) para acceder y operar con esos datos sin que se modifiquen directamente desde afuera.
+En este ejercicio encapsulé el saldo de una cuenta usando un atributo privado (__saldo). Solo se puede acceder y modificar este valor mediante métodos específicos como depositar, retirar y obtener_saldo, lo que protege la integridad de los datos y evita manipulaciones externas indebidas.
